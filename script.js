@@ -30,3 +30,13 @@ function copyPassword() {
     document.execCommand('copy');
     alert('Password copied to clipboard!');
 }
+
+function resetForm() {
+    document.getElementById('length').value = '';
+    document.getElementById('uppercase').checked = false;
+    document.getElementById('lowercase').checked = false;
+    document.getElementById('numbers').checked = false;
+    document.getElementById('symbols').checked = false;
+    document.getElementById('password').value = '';
+}
+
